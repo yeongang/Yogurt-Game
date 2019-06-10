@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>윷놀이로 떡국 만들기</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id = "start">
+        <img style="width : 800px; height:600px;" src="처음.jpg">
+        
+        <div style="position:absolute; top:350px; left:150px">
+        <button class="btn" id="infobtn" type="submit" >
+        <img style="width : 150px; height:75px;" src="게임설명.png"></button></div>
+        <div style="position:absolute; top:350px; left:425px">
+        <button class="btn" id="startbtn" type="submit" >
+        <img style="width : 150px; height:75px;" src="게임시작.png"></button></div>
+    </div>
+
+    <div id = "info" hidden = "true">
+        <img style="width : 800px; height:600px;" src="설명.jpg">
+
+        <div style="position:absolute; top:500px; left:150px">
+        <button class="btn" id="backbtn" type="submit" >
+        <img style="width : 150px; height:65px;" src="뒤로가기.png"></button></div>
+        <div style="position:absolute; top:500px; left:425px">
+        <button class="btn" id="startbtn2" type="submit" >
+        <img style="width : 150px; height:65px;" src="게임시작.png"></button></div>
+    </div>    
+
+    <div id="yut" hidden = true>
+        <canvas id="myCanvas" width="800" height="600"></canvas>        
+
+        <div style="position:absolute; top:20px; left:600px">
+        <button class="btn" id="restartbtn" type="submit" onClick="window.location.reload()">
+        <img style="width : 150px; height:50px;" src="restart.jpg"></button></div>
+
+        <div style="position:absolute; top:120px; left:600px">
+        <button class="btn" id="musicstartbtn" type="submit" onclick="stop();">
+        <img style="width : 150px; height:50px;" src="musicstart.jpg"></button></div>
+
+        <div style="position:absolute; top:220px; left:600px">
+        <button class="btn" id="yutthrowbtn" type="submit" onclick="yutthrow();">
+        <img style="width : 150px; height:125px;" src="윷던지기.jpg"></button></div>
+
+        <div style="position:absolute; top:365px; left:630px">
+        <img style="width : 100px; height:80px;" src="throw.jpg"></div>
+        
+        <div style="position:absolute; top:500px; left:600px">
+        <button class="btn" id="backbtn2" type="submit" >
+        <img style="width : 150px; height:50px;" src="뒤로가기.png"></button></div>
+    </div>
+    
+    
+    <!--    <div style="position:absolute; top:500px; left:600px">
+    <img style="width : 150px; height:60px;" src="score.png"></div>-->
+
+    <div id="yutyut" hidden=true>
+        <div style="position:absolute; top:0px; left:0px">
+        <img style="width: 800px; height: 600px" src="떡국.jpg"></div>
+        
+        <div style="position:absolute; top:500px; left:375px">
+        <button class="btn" id="tteogbtn" onclick="tteoggug();">
+        <img style="width : 100px; height:55px;" src="떡국보기.png"></button></div>
+        
+        <div style="position:absolute; top:500px; left:235px">
+        <button class="btn" id="rebtn" onclick="location.href = 'main.html'">
+        <img style="width : 100px; height:55px;" src="restart.jpg"></button></div>
+    
+        <!--<div style="position:absolute; top:250px; left:550px">
+        <img style="width: 140px; height: 80x" id="gug" src="파.png"></div>-->
+    
+        <div id="gug" style="position:absolute; top:230px; left:280px">
+        </div>
+        
+        <!--<div style="position:absolute; top:190px; left:290px">
+        <img style="width: 140px; height: 80x" id="gug1" src="떡.png"></div>
+        <div style="position:absolute; top:190px; left:240px">
+        <img style="width: 70px; height: 20x" id="gug2" src="파.png"></div>
+        <div style="position:absolute; top:240px; left:440px">
+        <img style="width: 40px; height: 10x" id="gug3" src="멸치.png"></div>
+        <div style="position:absolute; top:290px; left:390px">
+        <img style="width: 100px; height: 50px" id="gug4" src="만두.png"></div>
+        </div>-->
+        
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
